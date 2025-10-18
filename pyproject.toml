@@ -1,0 +1,8 @@
+[tool.pyright]
+include = ["src", "notebooks"]
+typeCheckingMode = "strict"
+reportMissingTypeStubs = true
+pythonVersion = "3.10"
+
+[tool.pydantic]
+strict = true
