@@ -43,7 +43,7 @@ ruff format .
 # Start Jupyter notebook server
 jupyter notebook
 
-# The main analysis notebook is at: notebooks/kaggle_titanic_notebook.ipynb
+# The main analysis notebook is at: notebooks/survival_by_age_kaggle_titanic_notebook.ipynb
 ```
 
 ## Code Architecture
