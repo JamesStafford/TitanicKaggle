@@ -8,5 +8,5 @@ from src.constants import SEX_ENCODED, AGE_HEADER, PCLASS_HEADER, SURVIVED_HEADE
 def get_x(titanic_features_df: DataFrame) -> DataFrame:
 	return titanic_features_df[[SEX_ENCODED, AGE_HEADER, PCLASS_HEADER]]
 
-def get_y(titanic_features_df: DataFrame) -> Series[Any]:
+def get_y(titanic_features_df: DataFrame):
 	return titanic_features_df[SURVIVED_HEADER]

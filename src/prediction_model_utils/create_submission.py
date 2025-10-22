@@ -1,0 +1,13 @@
+from typing import Any
+
+from pandas import DataFrame
+
+def create_submission_csv(titanic_df: DataFrame, predictions: Any) -> DataFrame:
+	random_forest_submission_df = DataFrame({
+		'PassengerId': titanic_df['PassengerId'],
+		'Survived': titanic_df
+	})
+
+	random_forest_submission_df.to_csv('../data/random_forest_submission.csv', index=False)
+
+	return random_forest_submission_df
